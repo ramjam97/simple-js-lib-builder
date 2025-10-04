@@ -3,15 +3,17 @@ import { readFileSync, writeFileSync, mkdirSync } from "fs";
 
 
 // ---------------[CONFIG: START]----------------------->
+
 const inputFile = "src/index.js";   // source file
 const readme = "src/README.md";     // source file
 const distDir = "dist";             // output folder
 const fileName = "index";           // output file
+const timezone = 'Asia/Manila';     // build timezone
+
 // ---------------[CONFIG: END]----------------------->
 
 
-// generate timestamp (Asia/Manila)
-const timezone = 'Asia/Manila';
+// generate timestamp 
 const timestamp = new Intl.DateTimeFormat("en-CA", {
     timeZone: timezone,
     year: "numeric",
@@ -34,7 +36,7 @@ const banner = `/*!
  * Author: ${pkg.author}
  * GitHub: ${pkg.git}
  * Build Date: ${timestamp} (${timezone})
- */`;
+*/`;
 
 // make sure folders exist
 mkdirSync(distDir, { recursive: true });

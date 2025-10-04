@@ -1,5 +1,5 @@
 {
-  "name": "Library Name",
+  "name": "your-library-name",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,10 +7,10 @@
     "build": "node build.js"
   },
   "keywords": [],
-  "author": "Ram Jam",
+  "author": "Your Name",
   "license": "ISC",
-  "git": "https://github.com/ramjam97",
-  "description": "library description",
+  "git": "https://github.com/yourusername/your-repo",
+  "description": "Short description of your library",
   "type": "module",
   "devDependencies": {
     "terser": "^5.44.0"
