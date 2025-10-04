@@ -4,7 +4,7 @@
 
 
 **Author:** Ram Jam   
-**GitHub:** https://github.com/ramjam97/js-lib-builder      
+**GitHub:** https://github.com/ramjam97/simple-js-lib-builder      
 **Version:** `1.0.0`
 
 A lightweight and reusable Node.js project template for building JavaScript libraries.
@@ -25,7 +25,7 @@ It automatically generates distributable files (``index.js``, ``index.min.js``, 
 
 ## 📁 Project Structure
 ```bash
-js-lib-builder/
+simple-js-lib-builder/
 ├── build.js          # The main builder script
 ├── package.json      # Library metadata and build configuration
 ├── src/
@@ -41,8 +41,8 @@ js-lib-builder/
 ## ⚙️ Getting Started
 ### 1. 🧩 Clone the Builder
 ```bash
-git clone https://github.com/ramjam97/js-lib-builder.git
-cd js-lib-builder
+git clone https://github.com/ramjam97/simple-js-lib-builder.git
+cd simple-js-lib-builder
 ```
 
 ### 2. 📦 Install Dependencies
@@ -66,6 +66,7 @@ You can use ES Modules syntax since the project is configured with ``"type": "mo
 Open your ``package.json`` and modify these fields to match your library:
 ```json
 {
+  "title": "Library Name",
   "name": "your-library-name",
   "version": "1.0.0",
   "description": "Short description of your library",
@@ -118,12 +119,13 @@ Each build is timestamped and stored under ``/versions/<version>`` for easy vers
 Each generated JS file will begin with:
 ```js
 /*!
- * YourLibraryName v1.0.0
- * Description: Library description
- * Author: Ram Jam
- * GitHub: https://github.com/ramjam97/js-lib-builder
- * Build Date: 2025-10-04 16:15:23 (Asia/Manila)
- */
+ * Library Name v1.0.0
+ * Description: Short description of your library
+ * Author: Your Name
+ * GitHub: https://github.com/yourusername/your-repo
+ * License: ISC
+ * Build Date: 2025-10-04 18:00:00 (Asia/Manila)
+*/
 ```
 
 ---
@@ -134,7 +136,7 @@ To use this builder for a new library project:
 
 #### 1.  Clone the builder repository:
 ```bash
-git clone https://github.com/ramjam97/js-lib-builder.git my-new-library
+git clone https://github.com/ramjam97/simple-js-lib-builder.git my-new-library
 cd my-new-library
 ```
 
@@ -150,7 +152,7 @@ npm run build
 ## 📘 Example Workflow
 ```bash
 # Step 1: Clone builder
-git clone https://github.com/ramjam97/js-lib-builder.git my-lib
+git clone https://github.com/ramjam97/simple-js-lib-builder.git my-lib
 cd my-lib
 
 # Step 2: Install dependencies
@@ -206,12 +208,12 @@ git push origin v3.0.0
 ```
 
 #### 4. Wait about a minute ⏱️
-jsDelivr automatically scans GitHub repositories for new tags and hosts your files.
+**jsDelivr** automatically scans GitHub repositories for new tags and hosts your files.
 
 #### 4. Access your CDN link
 Once processed, your library will be available using this URL pattern:
 ```text
-https://cdn.jsdelivr.net/gh/<username>/<repository>@<version>/dist/<filename>.min.js
+https://cdn.jsdelivr.net/gh/<username>/<repository>@<version>/dist/index.min.js
 ```
 
 **Example (RamStateJs v3.0.0):**
@@ -251,7 +253,6 @@ Once hosted, anyone can include your library via CDN:
 > This ensures the /dist folder in that tag contains your latest, production-ready build.
 
 
----
 ---
 
 
