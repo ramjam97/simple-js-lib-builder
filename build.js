@@ -17,7 +17,7 @@ const versionDir = `versions/${pkg.version}`;
 
 // banner comment (will go to both files)
 const banner = `/*!
- * ${pkg.title} v${pkg.version}
+ * ${pkg.name} v${pkg.version}
  * Description: ${pkg.description}
  * Author: ${pkg.author}
  * GitHub: ${pkg.git}

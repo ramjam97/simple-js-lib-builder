@@ -66,8 +66,7 @@ You can use ES Modules syntax since the project is configured with ``"type": "mo
 Open your ``package.json`` and modify these fields to match your library:
 ```json
 {
-  "title": "Library Name",
-  "name": "your-library-name",
+  "name": "Library Name",
   "version": "1.0.0",
   "description": "Short description of your library",
   "author": "Your Name",
